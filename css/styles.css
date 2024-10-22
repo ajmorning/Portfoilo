@@ -1,0 +1,192 @@
+
+body{
+    background-color: rgb(251, 251, 251);
+    font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header, footer{
+    background-color: #003540;
+    color:white;
+    text-align: center;
+    padding: 1rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.column{
+    background-color: lightblue;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal
+}
+
+nav {
+    background-color: #005f73;
+    padding:10px 0;
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+nav a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+nav a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  
+  
+.slider_container {
+    position: center;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.slider {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+  }
+  
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+  }
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+ 
+  
+.slide.one {
+    background: rgb(182, 19, 109);
+  }
+  
+.slide.two {
+    background: rgb(255, 64, 64);
+  }
+  
+.slide.three {
+    background: rgb(11, 173, 188);
+  }
+  
+.slide.four {
+    background: rgb(11, 188, 14);
+  }
+  
+.slide.five {
+    background: rgb(173, 11, 188);
+  }
+  
+@keyframes sliding {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  
+
+
+
+
+@media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr; /* Stack the columns */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
